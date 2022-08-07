@@ -1,0 +1,23 @@
+.btn {
+  background-color: var(--color-primary-cyan-dark);
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  &:active {
+    background-color: #1a4032;
+  }
+
+  &__icon {
+    height: 16px;
+    display: inline-block;
+    margin-right: 11px;
+  }
+  &__content {
+    color: var(--color-neutral-white);
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+}

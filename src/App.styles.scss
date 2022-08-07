@@ -1,0 +1,28 @@
+:root {
+  --color-primary-cyan-dark: hsl(158, 36%, 37%);
+  --color-primary-cream: hsl(30, 38%, 92%);
+  --color-neutral-blue-veryDark: hsl(212, 21%, 14%);
+  --color-neutral-blue-darkGrayish: hsl(228, 12%, 48%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --font-default: 1.4rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 1.4rem;
+  max-width: 1440;
+  margin: 0 auto;
+  background-color: var(--color-primary-cream);
+}

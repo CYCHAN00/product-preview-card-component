@@ -1,0 +1,92 @@
+.card {
+  width: 60rem;
+  background-color: var(--color-neutral-white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 17.5rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: contain, cover;
+
+  @media only screen and (max-width: 23.4375em) {
+    width: 34.3rem;
+    margin: 2.8rem auto 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  &__img {
+    background-image: url(../../assets/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: 23.4375em) {
+      height: 24rem;
+    }
+  }
+
+  &__product {
+    padding: 3.2rem 3.15rem;
+    @media only screen and (max-width: 23.4375em) {
+      padding: 2.4rem;
+    }
+
+    &-tag {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 5px;
+      color: var(--color-neutral-blue-darkGrayish);
+      display: inline-block;
+      margin-bottom: 2rem;
+      @media only screen and (max-width: 23.4375em) {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &-title {
+      font-size: 3.2rem;
+      font-family: 'Fraunces', serif;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 2.4rem;
+      font-weight: 700;
+      @media only screen and (max-width: 23.4375em) {
+        margin-bottom: 1.6rem;
+      }
+    }
+    &-details {
+      color: var(--color-neutral-blue-darkGrayish);
+      font-size: 1.4rem;
+      line-height: 23px;
+      margin-bottom: 2.9rem;
+      @media only screen and (max-width: 23.4375em) {
+        margin-bottom: 2.4rem;
+      }
+    }
+    &-price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      @media only screen and (max-width: 23.4375em) {
+        margin-bottom: 2rem;
+      }
+
+      &-discount {
+        font-size: 3.2rem;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0;
+        display: inline-block;
+        color: var(--color-primary-cyan-dark);
+        margin-right: 1.9rem;
+      }
+
+      &-original {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        color: var(--color-neutral-blue-darkGrayish);
+        text-decoration: line-through;
+      }
+    }
+  }
+}
